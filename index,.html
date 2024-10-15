@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>Profilize</h2>
+            </div>
+            <ul class="menu">
+                <li>Overview</li>
+                <li>Customers</li>
+                <li>Reports</li>
+                <li>Support</li>
+                <li>Settings</li>
+            </ul>
+            <div class="logout">
+                <button>Log out</button>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header>
+                <div class="search">
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="profile">
+                    <img src="user-avatar.png" alt="User Avatar">
+                    <span>Eve Murky</span>
+                </div>
+            </header>
+
+            <section class="overview">
+                <div class="kpis">
+                    <div class="kpi">
+                        <h3>KPI 1</h3>
+                        <p>$855.4k</p>
+                    </div>
+                    <div class="kpi">
+                        <h3>KPI 2</h3>
+                        <p>127.5k</p>
+                    </div>
+                    <div class="kpi">
+                        <h3>KPI 3</h3>
+                        <p>75.37%</p>
+                    </div>
+                </div>
+                
+                <div class="charts">
+                    <h3>This Year Growth</h3>
+                    <canvas id="barChart"></canvas>
+                </div>
+
+                <div class="recent-activity">
+                    <h3>Recent Activity</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Action</th>
+                                <th>Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>John Doe</td>
+                                <td>New Purchase</td>
+                                <td>2 mins ago</td>
+                            </tr>
+                            <tr>
+                                <td>Amy Smith</td>
+                                <td>Customer Review</td>
+                                <td>10 mins ago</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
